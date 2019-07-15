@@ -39,7 +39,7 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message=ImageSendMessage(original_content_url='https://i.imgur.com/UICD0Ei.jpg',preview_image_url='https://i.imgur.com/UICD0Ei.jpg')
+    message=ImageSendMessage(original_content_url='https://i.imgur.com/LWyvy2Y.jpg',preview_image_url='https://i.imgur.com/LWyvy2Y.jpg')
     line_bot_api.reply_message(event.reply_token,message)
     '''
     message=StickerSendMessage(package_id='1',sticker_id='1')
