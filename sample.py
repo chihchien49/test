@@ -43,7 +43,7 @@ def handle_message(event):
     line_bot_api.reply_message(
         event.reply_token,
         message=ImageSendMessage(
-            original_content_url='https://i.imgur.com/LWyvy2Y.jpg'
+            original_content_url='https://i.imgur.com/LWyvy2Y.jpg',
             preview_image_url='https://i.imgur.com/LWyvy2Y.jpg'
         )
         line_bot_api.reply_message(event.reply_token,message)
