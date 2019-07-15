@@ -51,8 +51,7 @@ def handle_message(event):
         event.reply_token,
         TextSendMessage(text=event.message.text))
         '''
-聊天室對話結束
-輸入訊息並加上 @姓名……
+
 
 
 
