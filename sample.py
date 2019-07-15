@@ -42,7 +42,7 @@ def handle_message(event):
     # 回應使用者輸入的話
     line_bot_api.reply_message(
         event.reply_token,
-        message=StickerSendMessage(
+        message=ImageSendMessage(
             original_content_url='https://i.imgur.com/LWyvy2Y.jpg'
             preview_image_url='https://i.imgur.com/LWyvy2Y.jpg'
         )
