@@ -43,8 +43,8 @@ def handle_message(event):
     line_bot_api.reply_message(
         event.reply_token,
         message=ImageSendMessage(
-            original_content_url='https://pmcvariety.files.wordpress.com/2019/03/rexfeatures_9640561vn.jpg?w=1000',
-            preview_image_url='https://pmcvariety.files.wordpress.com/2019/03/rexfeatures_9640561vn.jpg?w=1000'
+            original_content_url='https://pmcvariety.files.wordpress.com/2019/03/rexfeatures_9640561vn.jpg',
+            preview_image_url='https://pmcvariety.files.wordpress.com/2019/03/rexfeatures_9640561vn.jpg'
         )
         line_bot_api.reply_message(event.reply_token,message)
 
