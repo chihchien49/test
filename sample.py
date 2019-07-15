@@ -39,15 +39,22 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    message=ImageSendMessage(original_content_url='https://i.imgur.com/UICD0Ei.jpg',preview_image_url='https://i.imgur.com/UICD0Ei.jpg')
+    line_bot_api.reply_message(event.reply_token,message)
+    '''
+    message=StickerSendMessage(package_id='1',sticker_id='1')
+    line_bot_api.reply_message(event.reply_token,message)
+    '''
     # 回應使用者輸入的話
+    '''
     line_bot_api.reply_message(
         event.reply_token,
-        message=ImageSendMessage(
-            original_content_url='https://i.imgur.com/LWyvy2Y.jpg',
-            preview_image_url='https://i.imgur.com/LWyvy2Y.jpg'
-        )
-    )
-      
+        TextSendMessage(text=event.message.text))
+        '''
+聊天室對話結束
+輸入訊息並加上 @姓名……
+
+
 
 
 if __name__ == "__main__":
