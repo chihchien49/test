@@ -42,9 +42,9 @@ def handle_message(event):
     # 回應使用者輸入的話
     line_bot_api.reply_message(
         event.reply_token,
-        message=ImageSendMessage(
-            original_content_url='https://imgur.com/LWyvy2Y',
-            preview_image_url='https://imgur.com/LWyvy2Y'
+        message=StickerSendMessage(
+            package_id='1',
+            sticker_id='1'
         )
         line_bot_api.reply_message(event.reply_token,message)
 
